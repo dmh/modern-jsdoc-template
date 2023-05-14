@@ -1,0 +1,139 @@
+/* stylelint-disable selector-class-pattern */
+.hljs {
+  word-wrap: anywhere;
+  white-space: pre;
+}
+
+/* keyword */
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  color: #f47067;
+}
+
+.hljs-type {
+  color: #adbac7;
+}
+
+.hljs-title.class_,
+.hljs-title.class_.inherited__ {
+color: #f69d50;
+}
+
+/* entity */
+.hljs-title,
+.hljs-title.function_ {
+  color: #dcbdfb;
+}
+
+/* constant */
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  color: #6cb6ff;
+}
+
+/* string */
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #96d0ff;
+}
+
+/* variable */
+.hljs-built_in,
+.hljs-symbol {
+  color: #f69d50;
+}
+
+/* comment */
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  color: #768390;
+}
+
+/* entity-tag */
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  color: #8ddb8c;
+}
+
+/* storage-modifier-import */
+.hljs-subst {
+  color: #adbac7;
+}
+
+/* markup-heading */
+.hljs-section {
+  font-weight: bold;
+  color: #316dca;
+}
+
+/* markup-list */
+.hljs-bullet {
+  color: #eac55f;
+}
+
+/* markup-italic */
+.hljs-emphasis {
+  font-style: italic;
+  color: #adbac7;
+}
+
+/* markup-bold */
+.hljs-strong {
+  font-weight: bold;
+  color: #adbac7;
+}
+
+/* markup-inserted */
+.hljs-addition {
+  color: #b4f1b4;
+  background-color: #1b4721;
+}
+
+/* markup-deleted */
+.hljs-deletion {
+  color: #ffd8d3;
+  background-color: #78191b;
+}
+
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  color: #6cb6ff;
+}
+
+/* line numbers */
+.hljs-ln-numbers {
+    position: relative;
+    width: 1%;
+    min-width: 50px;
+    padding-right: 30px !important;
+    padding-left: 6px !important;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    user-select: none;
+    color: #768390;
+}

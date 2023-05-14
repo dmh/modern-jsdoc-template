@@ -1,0 +1,83 @@
+{
+  "name": "dark-jsdoc-default",
+  "version": "0.0.1",
+  "description": "JSDoc default template with a Dark theme style that closely resembles the Dark theme found on GitHub",
+  "keywords": [
+    "jsdoc",
+    "template",
+    "dark",
+    "style",
+    "theme",
+    "default"
+  ],
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint-css": "stylelint 'src/**/*.css'",
+    "standardJs": "standard -v 'lib/**/*.js'",
+    "checkJs": "tsc -p jsconfig.json --maxNodeModuleJsDepth 0",
+    "test": "npm run lint-css && npm run standardJs && npm run checkJs",
+    "build": "node ./build/build.exec.mjs",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "dependencies": {
+    "jsdoc": "~4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "~20.1.0",
+    "@types/semver": "~7.3.13",
+    "chalk": "~5.2.0",
+    "cpy": "~10.0.0",
+    "del": "~7.0.0",
+    "husky": "~8.0.1",
+    "semver": "~7.5.0",
+    "standard": "~17.0.0",
+    "stylelint": "~15.6.1",
+    "stylelint-config-recommended": "~12.0.0",
+    "stylelint-no-unsupported-browser-features": "~6.1.0",
+    "typescript": "~5.0.4"
+  },
+  "engines": {
+    "node": ">=16.14",
+    "npm": ">=8.19"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "standard": {
+    "ignore": [
+      "template/",
+      "demo/",
+      "docs/"
+    ]
+  },
+  "browserslist": [
+    "last 3 iOS major versions and > 0.5%",
+    "last 3 Safari major versions and > 0.5%",
+    "last 3 Chrome major versions and > 0.5%",
+    "last 3 Edge major versions and > 0.5%",
+    "last 3 Firefox major versions and > 0.5%",
+    "last 3 ChromeAndroid major versions and > 0.5%",
+    "> 1%"
+  ],
+  "stylelint": {
+    "extends": [
+      "stylelint-config-recommended"
+    ],
+    "plugins": [
+      "stylelint-no-unsupported-browser-features"
+    ],
+    "rules": {},
+    "ignoreFiles": [
+      "template/"
+    ]
+  }
+}
