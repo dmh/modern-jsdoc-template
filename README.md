@@ -1,12 +1,12 @@
 # Dark JSDoc default template
 This is a JSDoc default template with a **Dark theme** style that closely resembles the Dark theme found on **GitHub**.
 
-[![Run tests]()
+[![Run tests](https://github.com/dmh/dark-jsdoc-default/actions/workflows/test.yml/badge.svg)](https://github.com/dmh/dark-jsdoc-default/actions/workflows/test.yml)
 ![node-current](https://img.shields.io/node/v/dark-jsdoc-default)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![JSDoc](https://img.shields.io/badge/API\%20documentation-JSDoc-yellow)
 
-## [**Demo Documentation**](https://dark-jsdoc-default.github.io)
+## [**Demo Documentation**](https://dmh.github.io/dark-jsdoc-default)
 
 
 
