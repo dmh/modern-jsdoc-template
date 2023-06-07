@@ -1,4 +1,6 @@
+import fsPromises from 'fs/promises'
 import cpy from 'cpy'
+import { globals } from './globals.mjs'
 
 /**
  * @summary Copy the default JSDoc template from node_modules
@@ -15,17 +17,30 @@ async function copyDefaultJSDocTemplate () {
 }
 
 /**
- * @summary Copy the Github Dark JSDoc template and static files
+ * @summary Copy theme JSDoc templates
  * @async
  * @returns undefined
  */
-async function copyGithubDarkJSDocTemplate () {
+async function copyThemeJSDocTemplate () {
   try {
-    await cpy('src/static/**', 'template/static')
-    await cpy('src/tmpl/**', 'template/tmpl')
+    await cpy(`${globals.SRC}/templates/**`, globals.DIST_TMPL)
   } catch (error) {
     console.error(error)
   }
 }
 
-export { copyDefaultJSDocTemplate, copyGithubDarkJSDocTemplate }
+/**
+ * @summary Copy template CSS to docs folder
+ * @async
+ * @returns undefined
+ */
+async function copyCss () {
+  try {
+    await fsPromises.mkdir(`${globals.DOCS}/styles`, { recursive: true })
+    await cpy(`${globals.DIST_CSS}/**`, `${globals.DOCS}/styles`)
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+export { copyDefaultJSDocTemplate, copyThemeJSDocTemplate, copyCss }

@@ -1,6 +1,8 @@
-import { cleanTemplate } from './clean.mjs'
-import { copyDefaultJSDocTemplate, copyGithubDarkJSDocTemplate } from './copy.mjs'
+import { cleanDist, cleanDocs } from './clean.mjs'
+import { copyDefaultJSDocTemplate, copyThemeJSDocTemplate } from './copy.mjs'
 import { checkNode } from './check.mjs'
+import { compileCss, compileMinCss } from './css.mjs'
+import { jsdocBuild } from './jsdoc.mjs'
 checkNode()
 
 /**
@@ -9,9 +11,16 @@ checkNode()
  * @returns undefined
  */
 async function build () {
-  await cleanTemplate()
+  await cleanDist()
+  await compileCss()
+  await compileMinCss()
   await copyDefaultJSDocTemplate()
-  await copyGithubDarkJSDocTemplate()
+  await copyThemeJSDocTemplate()
 }
 
-export { build }
+async function buildDocs () {
+  await cleanDocs()
+  await jsdocBuild()
+}
+
+export { build, buildDocs }

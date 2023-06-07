@@ -1,0 +1,235 @@
+:root {
+  /* ============ */
+  /* global styles */
+  /* ============ */
+  /* ----- global focus-visible settings ----- */
+  --root-focus-visible__outline-color: rgb(37, 109, 210);
+  /* --root-focus-visible__outline-offset:; */
+  --root-focus-visible__outline-width: .2ex;
+  --root-focus-visible__outline-style: solid;
+
+  /* ----- selection styles ----- */
+  --root-selection__color: currentColor;
+  --root-selection__bg-color: rgb(38 77 133 / 30%);
+
+  /* ----- color scheme ----- */
+  --root__color-scheme: light;
+
+  /* ----- accent color ----- */
+  /* --root__accent-color:; */
+
+  /* ----- enable global smooth scroll behaviour ----- */
+  /* --root__scroll-behavior: smooth; */
+
+  /* --root__bg-color:; */
+  /* --root__color:; */
+  --root__font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  --root-mono__font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  --root-mono__font-family2: consolas, conaco, 'Andale Mono', monospace;
+  --root__line-height: 1.6;
+  --root__font-size: 16px;
+
+
+
+  /* ============ */
+    /* links */
+  /* ============ */
+  /* --link__font-weight:; */
+  /* --link__font-family:; */
+  /* --link__font-size:; */
+  /* --link-visited__color:; */
+  --link__color: #0352be;
+  --link__text-underline-offset: .2ex;
+  /* --link__text-decoration-line:; */
+  --link__text-decoration-thickness: .2ex;
+  /* --link__text-decoration-style:; */
+  /* --link__text-decoration-color:; */
+  --link-hover__color: #00607e;
+  --link-hover__text-underline-offset: .1ex;
+  /* --link-hover__text-decoration-line:; */
+  --link-hover__text-decoration-thickness: .3ex;
+  /* --link-hover__text-decoration-style:; */
+  /* --link-hover__text-decoration-color:; */
+
+  /* ----- focus-visible settings for buttons ----- */
+  --link-focus-visible__outline-offset: 3px;
+  /* --link-focus-visible__outline-color:; */
+  --link-focus-visible__outline-style: solid;
+  --link-focus-visible__outline-width: .3ex;
+
+
+
+  /* ============ */
+  /* Buttons */
+  /* ============ */
+  --btn__font-weight: 700;
+  /* --btn__font-family:; */
+  /* --btn__font-size:; */
+  --btn__color: #000;
+  --btn__bg-color: #FF8B69;
+  --btn__border-width: 1px;
+  /* --btn__border-style:; */
+  --btn__border-color: #c45400;
+  --btn__border-radius: 6px;
+  --btn-hover__color: #000;
+  --btn-hover__bg-color: #e66b4c;
+  --btn-hover__border-color: #c45400;
+  --btn__transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  /* ----- focus-visible settings for buttons ----- */
+  --btn-focus-visible__outline-offset: 2px;
+  /* --btn-focus-visible__outline-color:; */
+  --btn-focus-visible__outline-style: solid;
+  --btn-focus-visible__outline-width: .5ex;
+
+
+
+  /* ============ */
+  /* Form */
+  /* ============ */
+  --input__font-weight:;
+  --input__font-family:;
+  --input__font-size:;
+  /* --input__color:; */
+  /* --input__bg-color:; */
+  --input__border-width: 2px;
+  /* --input__border-style:; */
+  --input__border-color: #afb8c1;
+  --input__border-radius: 6px;
+
+  /* ----- focus-visible settings for form inputs ----- */
+  --input-focus-visible__outline-offset:1px;
+  --input-focus-visible__outline-color: #d24500;
+  /* --input-focus-visible__outline-style:; */
+  --input-focus-visible__outline-width: 2px;
+
+
+
+  /* ============ */
+  /* inline-elements */
+  /* ============ */
+  --code__color: #1F2328;
+  --code__bg-color: #afb8c133;
+  --code__border-radius: 6px;
+
+
+  /* ============ */
+  /* block-elements */
+  /* ============ */
+  /* --pre__color:; */
+  --pre__bg-color: #afb8c133;
+  /* --hr__border-top-style:; */
+  /* --hr__border-top-width:; */
+  --hr__border-top-color: #57585a;
+  /* --blockquote__color:; */
+  /* --caption__color:; */
+  /* ============ */
+  /* ============ */
+
+
+
+  /* ============ */
+  /* table */
+  /* ============ */
+  /* --table__border-color:; */
+  /* --table__border-width:; */
+  --table__border-style: solid;
+
+
+
+  /* ============ */
+  /* headings */
+  /* ============ */
+  /* ----- all headings style ----- */
+  /* --heading__font-family:; */
+  /* --heading__font-weight:; */
+  /* --heading__color:; */
+
+  /* ----- heading link ----- */
+  /* --heading-link__color:; */
+  /* --heading-link__text-decoration-offset:; */
+  --heading-link__text-decoration-line: none;
+  /* --heading-link__text-decoration-thickness:; */
+  /* --heading-link__text-decoration-style:; */
+  /* --heading-link__text-decoration-color:; */
+  /* --heading-link-hover__color:; */
+  --heading-link-hover__text-decoration-offset: 0;
+  /* --heading-link-hover__text-decoration-line:; */
+  --heading-link-hover__text-decoration-thickness: 0.15ex;
+  /* --heading-link-hover__text-decoration-style:; */
+  /* --heading-link-hover__text-decoration-color:; */
+  /* --heading-link-visited__color:; */
+
+  /* 10 headings styles separatly */
+  /* --text-style10__font-family:; */
+  /* --text-style9__font-family:; */
+  /* --text-style8__font-family:; */
+  /* --text-style7__font-family:; */
+  /* --text-style6__font-family:; */
+  /* --text-style5__font-family:; */
+  /* --text-style4__font-family:; */
+  /* --text-style3__font-family:; */
+  /* --text-style2__font-family:; */
+  /* --text-style1__font-family:; */
+  /* --text-style10__font-weight:; */
+  /* --text-style9__font-weight:; */
+  /* --text-style8__font-weight:; */
+  /* --text-style7__font-weight:; */
+  /* --text-style6__font-weight:; */
+  /* --text-style5__font-weight:; */
+  /* --text-style4__font-weight:; */
+  /* --text-style3__font-weight:; */
+  /* --text-style2__font-weight:; */
+  /* --text-style1__font-weight:; */
+  /* --text-style10__color:; */
+  /* --text-style9__color:; */
+  /* --text-style8__color:; */
+  /* --text-style7__color:; */
+  /* --text-style6__color:; */
+  /* --text-style5__color:; */
+  /* --text-style4__color:; */
+  /* --text-style3__color:; */
+  /* --text-style2__color:; */
+  /* --text-style1__color:; */
+
+
+  --heading-scale-ratio: 1.15;
+  /* sizes based on scale ratio */
+  --__size10: (var(--heading-scale-ratio) * var(--__size9));
+  --__size9: (var(--heading-scale-ratio) * var(--__size8));
+  --__size8: (var(--heading-scale-ratio) * var(--__size7));
+  --__size7: (var(--heading-scale-ratio) * var(--__size6));
+  --__size6: (var(--heading-scale-ratio) * var(--__size5));
+  --__size5: (var(--heading-scale-ratio) * var(--__size4));
+  --__size4: (var(--heading-scale-ratio) * var(--__size3));
+  --__size3: (var(--heading-scale-ratio) * var(--__size2));
+  --__size2: (var(--heading-scale-ratio) * var(--__size1));
+  --__size1: 1;
+
+  --text-style10__font-size: calc(var(--__size10) * 1rem);
+  --text-style9__font-size: calc(var(--__size9) * 1rem);
+  --text-style8__font-size: calc(var(--__size8) * 1rem);
+  --text-style7__font-size: calc(var(--__size7) * 1rem);
+  --text-style6__font-size: calc(var(--__size6) * 1rem);
+  --text-style5__font-size: calc(var(--__size5) * 1rem);
+  --text-style4__font-size: calc(var(--__size4) * 1rem);
+  --text-style3__font-size: calc(var(--__size3) * 1rem);
+  --text-style2__font-size: calc(var(--__size2) * 1rem);
+  --text-style1__font-size: calc(var(--__size1) * 1rem);
+
+
+
+  /* jsdoc variables */
+  --jsdoc-name__color: #9753da;
+  --jsdoc-signature__color: #6e767e;
+  --jsdoc-signature-type__color: #09671b;
+  --jsdoc-signature-attr__color: var(--jsdoc-signature-type__color);
+  --jsdoc-param-type__color: #046702;
+  --jsdoc-default__color: #aa231a;
+  --jsdoc-attributes__color: #804a35;
+  --jsdoc-important__color: var(--jsdoc-default__color);
+  --jsdoc-source__color: var(--code__color);
+  --jsdoc-source__bg-color: var(--root__bg-color);
+  --jsdoc-source__border-color: #d0d7de;
+
+}

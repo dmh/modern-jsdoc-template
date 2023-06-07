@@ -1,0 +1,211 @@
+.body {
+  max-width: 1600px;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+}
+
+.container {
+  margin-inline: 1rem;
+}
+
+/* grid */
+.main {
+  grid-area: main;
+}
+
+.sidenav {
+  margin-block-start: 2rem;
+  grid-area: sidenav;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas:
+      "sidenav main"
+      "footer footer";
+    gap: 2rem;
+  }
+  .sidenav ul {
+    flex-direction: column;
+  }
+}
+
+.content {
+  margin-block-start: 2rem;
+  grid-area: content;
+  min-width: 0;
+}
+
+.toc {
+  margin-block-start: 2rem;
+  grid-area: toc;
+}
+
+@media (min-width: 1200px) {
+  .main {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-areas: "content toc";
+    gap: 2rem;
+  }
+}
+
+/* typography flow  */
+:where(
+  .sidenav,
+  .toc,
+  .readme article,
+  .content,
+  .content article,
+  .content article .description,
+  .content section,
+  .content .container-overview
+  ) > * + * {
+  margin-block-start: var(--space, 1em);
+}
+
+:where(
+  .sidenav,
+  .toc,
+  .readme article,
+  .content,
+  .content article,
+  .content article .description,
+  .content section,
+  .content .container-overview
+  ) :is(h2 + *, h3 + *, h4 + *, h5 + *) {
+  --space: 0.5em;
+}
+
+/* table */
+table.params td,
+table.params th,
+table.props td,
+table.props th {
+  text-align: left;
+}
+
+table.params thead tr,
+table.props thead tr {
+  background-color: var(--code__bg-color);
+}
+
+/* responsive table with horizontal scroll */
+:where(.responsive-table) {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* method names */
+:where(h1.name,
+h2.name,
+h3.name,
+h4.name,
+h5.name,
+h6.name) {
+  --heading__font-family: var(--root-mono__font-family);
+
+}
+
+:where(h1.name,
+h2.name,
+h3.name,
+h4.name,
+h5.name,
+h6.name):not(.subsection-title + .name) {
+  margin-block-start: 2.4em;
+}
+
+.name {
+  color: var(--jsdoc-name__color);
+}
+
+.signature {
+  color: var(--jsdoc-signature__color);
+}
+
+.type-signature {
+  color: var(--jsdoc-signature-type__color);
+}
+
+.signature-attributes {
+  color: var(--jsdoc-signature-attr__color);
+  font-weight: lighter;
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.param-type,
+.param-desc {
+  color: var(--jsdoc-param-type__color);
+}
+
+.attributes {
+  color: var(--jsdoc-attributes__color);
+}
+
+.default {
+  color: var(--jsdoc-default__color);
+}
+
+.important {
+  color: var(--jsdoc-important__color);
+}
+
+/* setup monospace font for some elements */
+:where(
+  .param-desc,
+  .default,
+  .attributes,
+  dd.tag-overrides,
+  .inherited-from > ul,
+  .tag-see > ul,
+  .tag-deprecated + dd,
+  .param-type,
+  dd.tag-source,
+  dd.tag-default
+) {
+  font-family: var(--root-mono__font-family);
+}
+
+/* table of contents */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.toc {
+  background: var(--code__bg-color);
+  padding: 12px;
+  border-radius: 2px;
+  align-self: start;
+  position: sticky;
+  top: 1rem;
+}
+
+.toc-nav .toc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.toc-nav .toc-list .toc-list-item .is-active-link {
+  color: inherit;
+}
+
+/* source code */
+.source.linenums {
+  font-size: 0.75rem;
+  border: 1px solid var(--jsdoc-source__border-color);
+  color: var(--jsdoc-source__color);
+  background-color: var(--jsdoc-source__bg-color);
+}
+
+.source.linenums :where(th, td) {
+  border: none;
+}
+
+.prettyprint {
+  color: var(--jsdoc-source__color);
+}

@@ -19,6 +19,9 @@
     "type": "git",
     "url": ""
   },
+  "files": [
+    "template/"
+  ],
   "scripts": {
     "prepare": "husky install",
     "lint-css": "stylelint 'src/**/*.css'",
@@ -26,18 +29,26 @@
     "checkJs": "tsc -p jsconfig.json --maxNodeModuleJsDepth 0",
     "test": "npm run lint-css && npm run standardJs && npm run checkJs",
     "build": "node ./build/build.exec.mjs",
-    "doc": "jsdoc -c jsdoc.json"
+    "docs": "node ./build/docs.exec.mjs",
+    "watch": "node ./build/watch.exec.mjs",
+    "start": "npm run watch & http-server -p 8082 docs/"
   },
   "dependencies": {
     "jsdoc": "~4.0.2"
   },
   "devDependencies": {
+    "@resultify/initial.css": "~0.0.3",
     "@types/node": "~20.1.0",
     "@types/semver": "~7.3.13",
     "chalk": "~5.2.0",
+    "chokidar": "~3.5.3",
     "cpy": "~10.0.0",
+    "cssnano": "~6.0.1",
     "del": "~7.0.0",
+    "execa": "~7.1.1",
+    "http-server": "^14.1.1",
     "husky": "~8.0.1",
+    "postcss-import": "~15.1.0",
     "semver": "~7.5.0",
     "standard": "~17.0.0",
     "stylelint": "~15.6.1",
