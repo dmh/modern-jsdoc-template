@@ -209,3 +209,8 @@ h6.name):not(.subsection-title + .name) {
 .prettyprint {
   color: var(--jsdoc-source__color);
 }
+
+/* readme page style */
+.readme table tr:nth-child(2n) {
+  background-color: var(--jsdoc-readme-table__bg-color);
+}

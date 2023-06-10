@@ -131,7 +131,7 @@
   /* ============ */
   /* table */
   /* ============ */
-  /* --table__border-color:; */
+  --table__border-color: #d8dee4;
   /* --table__border-width:; */
   --table__border-style: solid;
 
@@ -231,5 +231,5 @@
   --jsdoc-source__color: var(--code__color);
   --jsdoc-source__bg-color: var(--root__bg-color);
   --jsdoc-source__border-color: #d0d7de;
-
+  --jsdoc-readme-table__bg-color: #f6f8fa;
 }

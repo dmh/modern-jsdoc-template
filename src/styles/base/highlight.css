@@ -1,7 +1,46 @@
-/* stylelint-disable selector-class-pattern */
 .hljs {
+  --jsdoc-hl-comment__color: #6e7781;
+  --jsdoc-hl-constant__color: #0550ae;
+  --jsdoc-hl-entity__color: #8250df;
+  --jsdoc-hl-storage-modifier-import__color: #24292f;
+  --jsdoc-hl-entity-tag__color: #116329;
+  --jsdoc-hl-keyword__color: #cf222e;
+  --jsdoc-hl-string__color: #0a3069;
+  --jsdoc-hl-variable__color: #953800;
+  --jsdoc-hl-markup-heading__color: #0550ae;
+  --jsdoc-hl-markup-list__color: #3b2300;
+  --jsdoc-hl-markup-italic__color: #24292f;
+  --jsdoc-hl-markup-bold__color: #24292f;
+  --jsdoc-hl-markup-inserted__color: #116329;
+  --jsdoc-hl-markup-inserted__bg-color: #dafbe1;
+  --jsdoc-hl-markup-deleted__color: #82071e;
+  --jsdoc-hl-markup-deleted__bg-color: #ffebe9;
+  --jsdoc-hl-ln-numbers__color: #6e7781;
+
   word-wrap: anywhere;
   white-space: pre;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hljs {
+    --jsdoc-hl-comment__color: #768390;
+    --jsdoc-hl-constant__color: #6cb6ff;
+    --jsdoc-hl-entity__color: #dcbdfb;
+    --jsdoc-hl-storage-modifier-import__color: #adbac7;
+    --jsdoc-hl-entity-tag__color: #8ddb8c;
+    --jsdoc-hl-keyword__color: #f47067;
+    --jsdoc-hl-string__color: #96d0ff;
+    --jsdoc-hl-variable__color: #f69d50;
+    --jsdoc-hl-markup-heading__color: #316dca;
+    --jsdoc-hl-markup-list__color: #eac55f;
+    --jsdoc-hl-markup-italic__color: #adbac7;
+    --jsdoc-hl-markup-bold__color: #adbac7;
+    --jsdoc-hl-markup-inserted__color: #b4f1b4;
+    --jsdoc-hl-markup-inserted__bg-color: #1b4721;
+    --jsdoc-hl-markup-deleted__color: #ffd8d3;
+    --jsdoc-hl-markup-deleted__bg-color: #78191b;
+    --jsdoc-hl-ln-numbers__color: #768390;
+  }
 }
 
 /* keyword */
@@ -12,22 +51,22 @@
 .hljs-template-variable,
 .hljs-type,
 .hljs-variable.language_ {
-  color: #f47067;
+  color: var(--jsdoc-hl-keyword__color);
 }
 
 .hljs-type {
-  color: #adbac7;
+  color: var(--jsdoc-hl-storage-modifier-import__color);
 }
 
 .hljs-title.class_,
 .hljs-title.class_.inherited__ {
-color: #f69d50;
+  color: var(--jsdoc-hl-variable__color);
 }
 
 /* entity */
 .hljs-title,
 .hljs-title.function_ {
-  color: #dcbdfb;
+  color: var(--jsdoc-hl-entity__color);
 }
 
 /* constant */
@@ -41,27 +80,27 @@ color: #f69d50;
 .hljs-selector-attr,
 .hljs-selector-class,
 .hljs-selector-id {
-  color: #6cb6ff;
+  color: var(--jsdoc-hl-constant__color);
 }
 
 /* string */
 .hljs-regexp,
 .hljs-string,
 .hljs-meta .hljs-string {
-  color: #96d0ff;
+  color: var(--jsdoc-hl-string__color);
 }
 
 /* variable */
 .hljs-built_in,
 .hljs-symbol {
-  color: #f69d50;
+  color: var(--jsdoc-hl-variable__color);
 }
 
 /* comment */
 .hljs-comment,
 .hljs-code,
 .hljs-formula {
-  color: #768390;
+  color: var(--jsdoc-hl-comment__color);
 }
 
 /* entity-tag */
@@ -69,47 +108,47 @@ color: #f69d50;
 .hljs-quote,
 .hljs-selector-tag,
 .hljs-selector-pseudo {
-  color: #8ddb8c;
+  color: var(--jsdoc-hl-entity-tag__color);
 }
 
 /* storage-modifier-import */
 .hljs-subst {
-  color: #adbac7;
+  color: var(--jsdoc-hl-storage-modifier-import__color);
 }
 
 /* markup-heading */
 .hljs-section {
   font-weight: bold;
-  color: #316dca;
+  color: var(--jsdoc-hl-section__color);
 }
 
 /* markup-list */
 .hljs-bullet {
-  color: #eac55f;
+  color: var(--jsdoc-hl-bullet__color);
 }
 
 /* markup-italic */
 .hljs-emphasis {
   font-style: italic;
-  color: #adbac7;
+  color: var(--jsdoc-hl-emphasis__color);
 }
 
 /* markup-bold */
 .hljs-strong {
   font-weight: bold;
-  color: #adbac7;
+  color: var(--jsdoc-hl-strong__color);
 }
 
 /* markup-inserted */
 .hljs-addition {
-  color: #b4f1b4;
-  background-color: #1b4721;
+  color: var(--jsdoc-hl-addition__color);
+  background-color: var(--jsdoc-hl-addition__bg-color);
 }
 
 /* markup-deleted */
 .hljs-deletion {
-  color: #ffd8d3;
-  background-color: #78191b;
+  color: var(--jsdoc-hl-deletion__color);
+  background-color: var(--jsdoc-hl-deletion__bg-color);
 }
 
 .hljs-char.escape_,
@@ -118,22 +157,16 @@ color: #f69d50;
 .hljs-property,
 .hljs-punctuation,
 .hljs-tag {
-  color: #6cb6ff;
+  color: var(--jsdoc-hl-constant__color);
 }
 
 /* line numbers */
 .hljs-ln-numbers {
-    position: relative;
-    width: 1%;
-    min-width: 50px;
-    padding-right: 30px !important;
-    padding-left: 6px !important;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: right;
-    white-space: nowrap;
-    vertical-align: top;
-    cursor: pointer;
-    user-select: none;
-    color: #768390;
+  padding-right: 2rem !important;
+  padding-left: 0.5rem !important;
+  text-align: right;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  color: var(--jsdoc-hl-ln-numbers__color);
 }

@@ -4,12 +4,14 @@
     --root-focus-visible__outline-color: #3b80e5;
     --root-selection__bg-color: rgb(56 132 242 / 30%);
     --root__color-scheme: dark;
+    --root__color: #adbac7;
     --root__bg-color: #22272e;
     --link__color: #6BB4FF;
     --link-visited__color: #c498ff;
     --link-hover__color: #91d6e0;
     --input-disabled__bg-color: #4d4d4d;
     --code__color: #adbac7;
+    --table__border-color:#444c56;
 
     /* jsdoc variables */
     --jsdoc-name__color: #dcbdfb;
@@ -19,5 +21,6 @@
     --jsdoc-default__color: #ff958f;
     --jsdoc-attributes__color: #c1aea7;
     --jsdoc-source__border-color: #444c56;
+    --jsdoc-readme-table__bg-color: #2d333b;
   }
 }
