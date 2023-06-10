@@ -74,7 +74,7 @@ npm install --save-dev modern-jsdoc-template
     }
   },
   "opts": {
-    "template": "modern-jsdoc-template/default",
+    "template": "node_modules/modern-jsdoc-template/default",
     "readme": "./README.md",
     "destination": "./docs/",
     "recurse": true,
