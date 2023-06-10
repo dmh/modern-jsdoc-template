@@ -1,4 +1,12 @@
 
+#### v0.0.2 `June 10, 2023`
+
+- **[DOC]** update readme, add table of contents and contributing info ([65d2d0a](https://github.com/dmh/modern-jsdoc-template/commit/65d2d0a))
+- **[TASK]** update demo files ([a592cf6](https://github.com/dmh/modern-jsdoc-template/commit/a592cf6))
+- **[TASK]** rename template forlder to default ([62d1a87](https://github.com/dmh/modern-jsdoc-template/commit/62d1a87))
+
+***
+
 #### v0.0.1 `June 10, 2023`
 
 - **[TASK]** rename package to modern-jsdoc-template ([bd7c85e](https://github.com/dmh/modern-jsdoc-template/commit/bd7c85e))

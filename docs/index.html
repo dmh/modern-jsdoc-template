@@ -49,27 +49,38 @@
 <img src="https://img.shields.io/node/v/modern-jsdoc-template" alt="node-current">
 <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="JavaScript Style Guide"></a>
 <img src="https://img.shields.io/badge/API%20documentation-JSDoc-yellow" alt="JSDoc"></p>
-<h2 id="demo-documentation"><a href="https://dmh.github.io/modern-jsdoc-template"><strong>Demo Documentation</strong></a></h2>
+<h2 id="demo"><a href="https://dmh.github.io/modern-jsdoc-template"><strong>Demo</strong></a></h2>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#why">Why?</a></li>
+<li><a href="#goal">Goal</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#comparison-table">Comparison Table</a></li>
+<li><a href="#quick-start">Quick start</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="CHANGELOG.md">Changelog</a></li>
+<li><a href="#thanks">Thanks</a></li>
+</ul>
 <h2 id="why%3F">Why?</h2>
-<p><strong>Dark/Light theme</strong>
-This template enhances the simple and minimalistic JSDoc default template by incorporating a dark and light theme styling, similar to GitHub's dark and light theme. There are no other significant alterations.</p>
+<p><strong>Dark/Light theme</strong></p>
+<p>This template enhances the simple and minimalistic JSDoc default template by incorporating a dark and light theme styling, similar to GitHub's dark dimmed and light theme. There are no other significant alterations.</p>
 <h2 id="goal">Goal</h2>
-<p><strong>Minimal changes to the default theme.</strong>
-The JSDoc default theme has undergone minimal changes. The template only includes new styles and slight external script additions to the JSDoc default template. The main functionality and features remain unchanged. During the build process, most of the templates are copied from JSDoc without any modifications, ensuring alignment with the JSDoc default template in terms of features and functionality.</p>
+<p><strong>Minimal changes to the default theme.</strong></p>
+<p>The JSDoc default theme has undergone minimal changes. The template only includes new styles and slight external script additions to the JSDoc default template. The main functionality and features remain unchanged. During the build process, most of the templates are copied from JSDoc without any modifications, ensuring alignment with the JSDoc default template in terms of features and functionality.</p>
 <h2 id="features%3A">Features:</h2>
 <ul>
-<li><strong>Dark/Light theme</strong> similar to GitHub Light and Dark dimmed themes</li>
+<li><strong>Dark/Light theme</strong> similar to GitHub light and dark dimmed themes</li>
 <li><a href="https://github.com/highlightjs/highlight.js">Highlight.js</a> as a code syntax highlighter instead of <code>prettify.js</code></li>
 <li>Table of contents based on <a href="https://github.com/tscanlin/tocbot">tocbot.js</a></li>
 <li><a href="https://www.npmjs.com/package/@resultify/initial.css">initial.css</a> as a base root CSS styling</li>
 </ul>
-<h3 id="comparison-table">Comparison Table</h3>
+<h2 id="comparison-table">Comparison Table</h2>
 <table>
 <thead>
 <tr>
 <th></th>
 <th>JSDoc default template</th>
-<th>Dark JSDoc default template</th>
+<th>Modern JSDoc template</th>
 </tr>
 </thead>
 <tbody>
@@ -91,12 +102,12 @@ The JSDoc default theme has undergone minimal changes. The template only include
 <tr>
 <td><strong>General CSS styling</strong></td>
 <td>JSDoc default</td>
-<td><strong>Dark theme</strong> (<em>similar to GitHub</em>)</td>
+<td><strong>Dark/Light theme</strong> (<em>similar to GitHub</em>)</td>
 </tr>
 <tr>
 <td><strong>Code syntax highlighter styles</strong></td>
 <td>JSDoc <code>prettify.js</code> theme</td>
-<td><strong>Dark theme</strong> (<em>similar to GitHub</em>)</td>
+<td><strong>Dark/Light theme</strong> (<em>similar to GitHub</em>)</td>
 </tr>
 <tr>
 <td><strong>Layout Template</strong></td>
@@ -146,7 +157,7 @@ The JSDoc default theme has undergone minimal changes. The template only include
     }
   },
   &quot;opts&quot;: {
-    &quot;template&quot;: &quot;modern-jsdoc-template/template&quot;,
+    &quot;template&quot;: &quot;modern-jsdoc-template/default&quot;,
     &quot;readme&quot;: &quot;./README.md&quot;,
     &quot;destination&quot;: &quot;./docs/&quot;,
     &quot;recurse&quot;: true,
@@ -162,6 +173,14 @@ The JSDoc default theme has undergone minimal changes. The template only include
 </ol>
 <pre class="prettyprint source lang-js"><code>npx jsdoc -c jsdoc.json
 </code></pre>
+<h2 id="contributing">Contributing</h2>
+<ol>
+<li>Clone/fork the repository and run <code>npm install</code> to install dependencies.</li>
+<li>Run <code>npm start</code> to start the development server with watcher.</li>
+<li>Add your changes to <code>src/*</code> files and test the result in browser on <code>http://localhost:8082</code></li>
+<li>Run <code>npm test</code> to run tests.</li>
+<li>Commit your changes and create a pull request.</li>
+</ol>
 <h2 id="thanks">Thanks</h2>
 <ul>
 <li><a href="https://jsdoc.app">JSDoc</a></li>
