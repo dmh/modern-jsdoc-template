@@ -10,7 +10,7 @@
     }
   },
   "opts": {
-    "template": "./template",
+    "template": "./default",
     "readme": "./README.md",
     "destination": "./docs/",
     "recurse": true,
