@@ -1,4 +1,11 @@
 
+#### v1.0.0 `June 10, 2023`
+
+- **[BUGFIX]** add files config for npm package ([c32cfac](https://github.com/dmh/modern-jsdoc-template/commit/c32cfac))
+- **[TASK]** add homepage, issues and git url to package.json ([8f55c43](https://github.com/dmh/modern-jsdoc-template/commit/8f55c43))
+
+***
+
 #### v0.0.2 `June 10, 2023`
 
 - **[DOC]** update readme, add table of contents and contributing info ([65d2d0a](https://github.com/dmh/modern-jsdoc-template/commit/65d2d0a))
