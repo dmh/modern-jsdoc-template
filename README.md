@@ -1,35 +1,27 @@
-# Dark JSDoc default template
-This is a JSDoc default template with a **Dark theme** style that closely resembles the Dark theme found on **GitHub**.
+# Modern JSDoc default template
 
-[![Run tests](https://github.com/dmh/dark-jsdoc-default/actions/workflows/test.yml/badge.svg)](https://github.com/dmh/dark-jsdoc-default/actions/workflows/test.yml)
-![node-current](https://img.shields.io/node/v/dark-jsdoc-default)
+Modern JSDoc default template with a Dark/Light theme style that closely resembles the Dark/Light theme found on GitHub
+
+[![Run tests](https://github.com/dmh/modern-jsdoc-template/actions/workflows/test.yml/badge.svg)](https://github.com/dmh/modern-jsdoc-template/actions/workflows/test.yml)
+![node-current](https://img.shields.io/node/v/modern-jsdoc-template)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![JSDoc](https://img.shields.io/badge/API\%20documentation-JSDoc-yellow)
 
-## [**Demo Documentation**](https://dmh.github.io/dark-jsdoc-default)
-
-
-
-
-# Image/image/image
-
-
-
+## [**Demo Documentation**](https://dmh.github.io/modern-jsdoc-template)
 
 ## Why?
-**Dark theme.**
-
-This template enhances the simple and minimalistic JSDoc default template by incorporating a dark theme styling, similar to GitHub's dark theme. There are no other significant alterations.
+**Dark/Light theme**
+This template enhances the simple and minimalistic JSDoc default template by incorporating a dark and light theme styling, similar to GitHub's dark and light theme. There are no other significant alterations.
 
 ## Goal
 **Minimal changes to the default theme.**
-
-The JSDoc default theme has undergone minimal changes. The template only includes new styles and slight script additions to the JSDoc default template. The main functionality and features remain unchanged. During the build process, most of the templates are copied from JSDoc without any modifications, ensuring alignment with the JSDoc default template in terms of features and functionality.
+The JSDoc default theme has undergone minimal changes. The template only includes new styles and slight external script additions to the JSDoc default template. The main functionality and features remain unchanged. During the build process, most of the templates are copied from JSDoc without any modifications, ensuring alignment with the JSDoc default template in terms of features and functionality.
 
 ## Features:
-- **Dark theme** similar to GitHub dark theme
+- **Dark/Light theme** similar to GitHub Light and Dark dimmed themes
 - [Highlight.js](https://github.com/highlightjs/highlight.js) as a code syntax highlighter instead of `prettify.js`
 - Table of contents based on [tocbot.js](https://github.com/tscanlin/tocbot)
+- [initial.css](https://www.npmjs.com/package/@resultify/initial.css) as a base root CSS styling
 
 ### Comparison Table
 ||JSDoc default template|Dark JSDoc default template|
@@ -49,11 +41,11 @@ The JSDoc default theme has undergone minimal changes. The template only include
 ```
 npm install --save-dev jsdoc
 ```
-2. Install `dark-jsdoc-default`
+2. Install `modern-jsdoc-template`
 ```
-npm install --save-dev dark-jsdoc-default
+npm install --save-dev modern-jsdoc-template
 ```
-3. Specify a souce and dark template in `jsdoc.json`
+3. Specify a source and template in `jsdoc.json`
 ```json
 {
   "plugins": ["plugins/markdown"],
@@ -67,7 +59,7 @@ npm install --save-dev dark-jsdoc-default
     }
   },
   "opts": {
-    "template": "dark-jsdoc-default/template",
+    "template": "modern-jsdoc-template/template",
     "readme": "./README.md",
     "destination": "./docs/",
     "recurse": true,
@@ -88,7 +80,5 @@ npx jsdoc -c jsdoc.json
 - [Highlight.js](https://github.com/highlightjs/highlight.js)
 - [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js/)
 - [Tocbot](https://github.com/tscanlin/tocbot)
-- [GitHub dark theme](https://github.com)
-
-
-## Real examples
+- [GitHub dark/light theme](https://github.com)
+- [initial.css](https://www.npmjs.com/package/@resultify/initial.css)

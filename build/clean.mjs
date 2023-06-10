@@ -8,7 +8,7 @@ import { globals } from './globals.mjs'
  */
 async function cleanDist () {
   try {
-    if (globals.ROOT_DIR_NAME === 'dark-jsdoc-default') {
+    if (globals.ROOT_DIR_NAME === 'modern-jsdoc-template') {
       await deleteAsync([`${globals.DIST}/**/*`])
     }
   } catch (error) {
@@ -23,7 +23,7 @@ async function cleanDist () {
  */
 async function cleanDocs () {
   try {
-    if (globals.ROOT_DIR_NAME === 'dark-jsdoc-default') {
+    if (globals.ROOT_DIR_NAME === 'modern-jsdoc-template') {
       await deleteAsync([`${globals.DOCS}/**/*`])
     }
   } catch (error) {

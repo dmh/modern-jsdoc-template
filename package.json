@@ -1,7 +1,7 @@
 {
-  "name": "dark-jsdoc-default",
+  "name": "modern-jsdoc-template",
   "version": "0.0.1",
-  "description": "JSDoc default template with a Dark theme style that closely resembles the Dark theme found on GitHub",
+  "description": "Modern JSDoc default template with a Dark/Light theme style that closely resembles the Dark/Light theme found on GitHub",
   "keywords": [
     "jsdoc",
     "template",
