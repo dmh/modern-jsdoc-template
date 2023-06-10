@@ -10,14 +10,14 @@
     "theme",
     "default"
   ],
-  "homepage": "",
+  "homepage": "https://dmh.github.io/modern-jsdoc-template/",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/dmh/modern-jsdoc-template/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dmh/modern-jsdoc-template.git"
   },
   "files": [
     "template/"
