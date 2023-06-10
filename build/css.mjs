@@ -23,7 +23,7 @@ async function compileCss () {
             annotation: `${file.name}.map`
           }
         })
-        const folderName = 'template/static/styles'
+        const folderName = 'default/static/styles'
         console.log(`${folderName}/${file.name}`)
         console.log(`${folderName}/${file.name}.map`)
         await fsPromises.mkdir(globals.DIST_CSS, { recursive: true })
@@ -52,7 +52,7 @@ async function compileMinCss () {
         const postcssResult = await postcss().use(cssimport()).use(cssnano()).process(css, {
           from: file.path
         })
-        const folderName = 'template/static/styles'
+        const folderName = 'default/static/styles'
         console.log(`${folderName}/${file.name.slice(0, -4)}.min.css`)
         await fsPromises.mkdir(globals.DIST_CSS, { recursive: true })
         await fsPromises.writeFile(`${globals.DIST_CSS}/${file.name.slice(0, -4)}.min.css`, postcssResult.css)

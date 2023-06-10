@@ -2,7 +2,7 @@ import { deleteAsync } from 'del'
 import { globals } from './globals.mjs'
 
 /**
- * @summary Clean the template folder
+ * @summary Clean the default template folder
  * @async
  * @returns undefined
  */

@@ -22,7 +22,7 @@ globals.ROOT_DIR_NAME = globals.ROOT_PATH.split('/').pop()
 
 globals.DOCS = `${globals.ROOT_PATH}/docs`
 globals.SRC = `${globals.ROOT_PATH}/src`
-globals.DIST = `${globals.ROOT_PATH}/template`
+globals.DIST = `${globals.ROOT_PATH}/default`
 globals.DIST_CSS = `${globals.DIST}/static/styles`
 globals.DIST_TMPL = `${globals.DIST}/tmpl`
 

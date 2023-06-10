@@ -9,8 +9,8 @@ import { globals } from './globals.mjs'
  */
 async function copyDefaultJSDocTemplate () {
   try {
-    await cpy('node_modules/jsdoc/templates/default/tmpl/**', 'template/tmpl')
-    await cpy('node_modules/jsdoc/templates/default/publish.js', 'template', { flat: true })
+    await cpy('node_modules/jsdoc/templates/default/tmpl/**', `${globals.DIST}/tmpl`)
+    await cpy('node_modules/jsdoc/templates/default/publish.js', globals.DIST, { flat: true })
   } catch (error) {
     console.error(error)
   }
