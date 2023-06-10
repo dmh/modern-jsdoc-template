@@ -7,30 +7,43 @@ Modern JSDoc default template with a Dark/Light theme style that closely resembl
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![JSDoc](https://img.shields.io/badge/API\%20documentation-JSDoc-yellow)
 
-## [**Demo Documentation**](https://dmh.github.io/modern-jsdoc-template)
+## [**Demo**](https://dmh.github.io/modern-jsdoc-template)
+
+## Table of contents
+
+- [Why?](#why)
+- [Goal](#goal)
+- [Features](#features)
+- [Comparison Table](#comparison-table)
+- [Quick start](#quick-start)
+- [Contributing](#contributing)
+- [Changelog](CHANGELOG.md)
+- [Thanks](#thanks)
 
 ## Why?
 **Dark/Light theme**
-This template enhances the simple and minimalistic JSDoc default template by incorporating a dark and light theme styling, similar to GitHub's dark and light theme. There are no other significant alterations.
+
+This template enhances the simple and minimalistic JSDoc default template by incorporating a dark and light theme styling, similar to GitHub's dark dimmed and light theme. There are no other significant alterations.
 
 ## Goal
 **Minimal changes to the default theme.**
+
 The JSDoc default theme has undergone minimal changes. The template only includes new styles and slight external script additions to the JSDoc default template. The main functionality and features remain unchanged. During the build process, most of the templates are copied from JSDoc without any modifications, ensuring alignment with the JSDoc default template in terms of features and functionality.
 
 ## Features:
-- **Dark/Light theme** similar to GitHub Light and Dark dimmed themes
+- **Dark/Light theme** similar to GitHub light and dark dimmed themes
 - [Highlight.js](https://github.com/highlightjs/highlight.js) as a code syntax highlighter instead of `prettify.js`
 - Table of contents based on [tocbot.js](https://github.com/tscanlin/tocbot)
 - [initial.css](https://www.npmjs.com/package/@resultify/initial.css) as a base root CSS styling
 
-### Comparison Table
-||JSDoc default template|Dark JSDoc default template|
+## Comparison Table
+||JSDoc default template|Modern JSDoc template|
 |---|---|---|
 |**Publish Script**|`publish.js`|`publish.js` (_no changes, same as in JSDoc default template_)|
 |**Code syntax highlighter script**|`prettify.js`(_self-hosted_)|`highlight.js` (_CDN_)|
 |**Code line numbers script**|`linenumber.js` (_self-hosted_)|`highlightjs-line-numbers.js` (_CDN_)|
-|**General CSS styling**|JSDoc default|**Dark theme** (_similar to GitHub_)|
-|**Code syntax highlighter styles**|JSDoc `prettify.js` theme|**Dark theme** (_similar to GitHub_)|
+|**General CSS styling**|JSDoc default|**Dark/Light theme** (_similar to GitHub_)|
+|**Code syntax highlighter styles**|JSDoc `prettify.js` theme|**Dark/Light theme** (_similar to GitHub_)|
 |**Layout Template**|JSDoc default layout |JSDoc default layout with some modifications to add scripts and styles|
 |**All others templates**|JSDoc default|Same as in **JSDoc default**, no changes!
 |**Fonts**|OpenSans (_external_)|system fonts|
@@ -59,7 +72,7 @@ npm install --save-dev modern-jsdoc-template
     }
   },
   "opts": {
-    "template": "modern-jsdoc-template/template",
+    "template": "modern-jsdoc-template/default",
     "readme": "./README.md",
     "destination": "./docs/",
     "recurse": true,
@@ -74,6 +87,13 @@ npm install --save-dev modern-jsdoc-template
 ```js
 npx jsdoc -c jsdoc.json
 ```
+
+## Contributing
+1. Clone/fork the repository and run `npm install` to install dependencies.
+2. Run `npm start` to start the development server with watcher.
+3. Add your changes to `src/*` files and test the result in browser on `http://localhost:8082`
+4. Run `npm test` to run tests.
+5. Commit your changes and create a pull request.
 
 ## Thanks
 - [JSDoc](https://jsdoc.app)
