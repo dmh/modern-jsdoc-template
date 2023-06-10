@@ -20,7 +20,8 @@
     "url": "https://github.com/dmh/modern-jsdoc-template.git"
   },
   "files": [
-    "template/"
+    "default/",
+    "src/"
   ],
   "scripts": {
     "prepare": "husky install",
