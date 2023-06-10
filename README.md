@@ -9,6 +9,8 @@ Modern JSDoc default template with a Dark/Light theme style that closely resembl
 
 ## [**Demo**](https://dmh.github.io/modern-jsdoc-template)
 
+![screenshot](https://github.com/dmh/modern-jsdoc-template/assets/5150636/517a585d-7982-4e12-aa4c-e37f9037165f)
+
 ## Table of contents
 
 - [Why?](#why)
