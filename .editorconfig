@@ -25,15 +25,6 @@ indent_style = tab
 [*.{yaml,yml}]
 indent_size = 2
 
-# ReST-Files
-[*.rst]
-indent_size = 3
-
-# SQL files
-[*.sql]
-indent_style = tab
-indent_size = 2
-
 # HTML files
 [*.html]
 indent_size = 2
